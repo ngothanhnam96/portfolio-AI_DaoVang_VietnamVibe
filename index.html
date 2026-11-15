@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Đào Vàng — Mai và chiếc tời tre</title>
+  <meta name="description" content="Trò chơi thả móc đào vàng qua bốn miền đất Việt: Bồng Miêu, Tây Nguyên, Hạ Long, Sa Pa.">
+  <meta name="theme-color" content="#1a120b">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="home-btn" type="button" aria-label="Về màn hình chính">⛏️ <b>Đào Vàng</b></button>
+    <div class="topbar-right">
+      <span class="total" id="total-best" title="Tổng điểm cao nhất"></span>
+      <button class="chip" id="sound-btn" type="button" aria-pressed="true">🔊 Âm thanh</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="screen">
+      <div class="hero">
+        <svg class="hero-art" id="hero-art" viewBox="300 20 220 140" aria-hidden="true"></svg>
+        <div>
+          <h1>Đào Vàng</h1>
+          <p class="lede">Mai mang chiếc tời tre đi khắp bốn miền tìm vàng. Thả móc đúng lúc, kéo vàng về,
+            đủ tiền mục tiêu trước khi hết giờ để sang màn mới.</p>
+        </div>
+      </div>
+      <h2 class="section-title">Chọn vùng đất</h2>
+      <div class="regions" id="regions"></div>
+      <details class="howto">
+        <summary>Cách chơi</summary>
+        <ul>
+          <li><b>Thả móc:</b> chạm vào màn hình, hoặc bấm <kbd>Space</kbd> / <kbd>↓</kbd>.</li>
+          <li>Vật càng nặng kéo càng chậm. Vàng tảng đáng giá nhưng tốn thời gian, đá gần như vô giá trị.</li>
+          <li><b>Hũ sành</b> có thể chứa tiền, thêm 8 giây hoặc trà gừng giúp kéo khỏe hơn.</li>
+          <li><b>Cua đá</b> chạy ngang hang, con nào cõng ngọc trai thì đáng giá 560.</li>
+          <li><b>Rễ cây</b> hất móc lại. <b>Tổ ong đất</b> làm bạn mất 5 giây.</li>
+          <li>Qua màn, ghé <b>gánh hàng Bà Tư</b> mua đồ cho màn sau. <kbd>C</kbd> để cắt dây khi có kéo,
+            <kbd>P</kbd> hoặc <kbd>Esc</kbd> để tạm dừng.</li>
+        </ul>
+      </details>
+    </section>
+
+    <section id="game" class="screen" hidden>
+      <div class="hud" aria-label="Thông tin màn chơi">
+        <div class="hud-cell"><span>Vùng</span><b id="hud-region"></b></div>
+        <div class="hud-cell"><span>Màn</span><b id="hud-level"></b></div>
+        <div class="hud-cell money"><span>Tiền / Mục tiêu</span><b><i id="hud-earned">0</i> / <i id="hud-target">0</i></b>
+          <div class="bar"><div class="bar-fill" id="hud-bar"></div></div></div>
+        <div class="hud-cell"><span>Thời gian</span><b id="hud-time">60</b></div>
+      </div>
+      <div class="stage-wrap">
+        <svg id="stage" class="stage" viewBox="0 0 800 600" tabindex="0" role="application"
+             aria-label="Bãi đào vàng. Chạm hoặc bấm Space để thả móc." aria-describedby="live">
+          <g id="backdrop"></g>
+          <g id="items"></g>
+          <line id="rope" x1="400" y1="100" x2="400" y2="136"/>
+          <g id="hook"></g>
+          <g id="rig"></g>
+          <g id="floaters"></g>
+        </svg>
+      </div>
+      <div class="controls">
+        <button class="btn primary big" id="fire-btn" type="button">⬇ Thả móc</button>
+        <button class="btn" id="cut-btn" type="button" hidden>✂ Cắt dây <span id="cut-count"></span></button>
+        <button class="btn" id="pause-btn" type="button" aria-label="Tạm dừng">⏸ Dừng</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="card" id="card" role="dialog" aria-modal="true" aria-labelledby="card-title"></div>
+  </div>
+  <div class="sr-only" id="live" aria-live="polite"></div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
