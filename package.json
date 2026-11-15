@@ -4,7 +4,7 @@
   "private": true,
   "description": "Đào Vàng - a swinging-hook gold-digging game set in four Vietnamese landscapes.",
   "type": "module",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "node scripts/serve.mjs",
     "test": "node --test"

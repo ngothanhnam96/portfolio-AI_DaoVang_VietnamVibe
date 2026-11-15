@@ -4,7 +4,7 @@ A script for showing the gold-digging game to a customer, in a live demo or a sc
 video. It runs about **3 minutes**. Shorter versions for a quick pitch or a social post are at
 the end.
 
-> **Live link:** https://ngothanhnam96.github.io/portfolio-AI_DaoVang/
+> **Live link:** https://ngothanhnam96.github.io/portfolio-AI_DaoVang_VietnamVibe/
 > (check the link before you present)
 
 ---
@@ -161,7 +161,7 @@ Use these when the customer asks questions.
 > 🧺 Bà Tư's street stall sells power-ups between levels
 > 📱 Phone and desktop, nothing to install
 >
-> Play it here: https://ngothanhnam96.github.io/portfolio-AI_DaoVang/
+> Play it here: https://ngothanhnam96.github.io/portfolio-AI_DaoVang_VietnamVibe/
 > Want a version for your brand, event or Tết campaign? Message me.
 
 ### Bài đăng tiếng Việt
@@ -173,4 +173,4 @@ Use these when the customer asks questions.
 > ngọc trai. Vàng càng nặng kéo càng chậm, nên mỗi lần thả móc đều phải tính toán. Qua màn,
 > ghé gánh hàng Bà Tư mua trà gừng, dây mây hay đồng hồ cát.
 >
-> Chơi ngay: https://ngothanhnam96.github.io/portfolio-AI_DaoVang/
+> Chơi ngay: https://ngothanhnam96.github.io/portfolio-AI_DaoVang_VietnamVibe/
